@@ -24,3 +24,17 @@ Get a list of all the layers available on the project:
 ```C#
 SmartLayers.Layers.List
 ```
+
+## Settings
+You can disable the auto-generation of the layer list by editing the file [LayersGenerator](https://github.com/nicoplv/smart-layers/blob/master/Assets/Extensions/SmartLayers/Editor/LayersGenerator.cs) like that:
+```C#
+private static bool autoGenerate = false;
+```
+
+You can change the folder path of the generated list by editing the file [LayersGenerator](https://github.com/nicoplv/smart-layers/blob/master/Assets/Extensions/SmartLayers/Editor/LayersGenerator.cs) like that:
+```C#
+private static string scriptFolderPathAbsolute = Application.dataPath + "YourPath";
+```
+
+## Others
+A button to force the generation of the list is created on the Unity menu at Tools >> SmartLayers >> Generator.
