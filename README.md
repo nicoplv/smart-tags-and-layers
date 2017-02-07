@@ -2,7 +2,7 @@
 A layer helper for Unity3D
 
 ## Installation
-Import the [package](https://github.com/nicoplv/smart-layers/raw/master/SmartLayers.unitypackage) on your project and that's all ... you have access easily to all the unity layers on your code.
+Import the [package](https://github.com/nicoplv/smart-layers/raw/master/SmartLayers.unitypackage) on your project and that's all ... you have access easily to all the layers on your code.
 
 ## Usage
 Get the mask of the layer named "Awesome Name":
