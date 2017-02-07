@@ -38,17 +38,19 @@ namespace SmartLayers
 
         private static void Update()
         {
-            if (autoGenerate && !Enumerable.SequenceEqual(layersBuffer, UnityEditorInternal.InternalEditorUtility.layers))
+            if (!EditorApplication.isPlaying)
             {
-                layersBuffer = UnityEditorInternal.InternalEditorUtility.layers;
-                waitGenerate = true;
-                generateAt = EditorApplication.timeSinceStartup + generateBuffer;
-            }
-            if (waitGenerate && generateAt < EditorApplication.timeSinceStartup)
-            {
-                waitGenerate = false;
-                Debug.Log("Generate");
-                Generate();
+                if (autoGenerate && !Enumerable.SequenceEqual(layersBuffer, UnityEditorInternal.InternalEditorUtility.layers))
+                {
+                    layersBuffer = UnityEditorInternal.InternalEditorUtility.layers;
+                    waitGenerate = true;
+                    generateAt = EditorApplication.timeSinceStartup + generateBuffer;
+                }
+                if (waitGenerate && generateAt < EditorApplication.timeSinceStartup)
+                {
+                    waitGenerate = false;
+                    Generate();
+                }
             }
         }
 
