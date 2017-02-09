@@ -1,9 +1,9 @@
 // This class is auto-generated DO NOT MODIFY
-// Use Tools >> SmartLayers >> Generator on the menu to update this class
+// Use Tools >> Smart Tags and Layers >> Generate Layers on the menu to update this class
 
 using System.Collections.Generic;
 
-namespace SmartLayers
+namespace SmartTagsAndLayers
 {
 	public static class Layers
 	{

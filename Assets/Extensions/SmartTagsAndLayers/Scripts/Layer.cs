@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SmartLayers
+namespace SmartTagsAndLayers
 {
 	public class Layer
 	{
